@@ -1,0 +1,108 @@
+
+
+.navbar li{
+    display: inline-flex;
+    padding: 10px 5px;
+    text-decoration: none;
+}
+.navlink_style{
+    text-decoration: none;
+    color: Black;
+    padding-right: 10px;
+}
+.navlink_style:hover{
+    color:red
+}
+
+.contain{
+    padding-top: 40px;
+    
+   
+    
+}
+.backg{
+    background-image:url("./assests/backimg.png") ;
+    background-size: cover;
+   
+    position: relative;
+}
+
+.item{
+    padding-left: 5px;
+}
+
+.custom-progress-bar .ProgressBar {
+    background-color: #ff0000; /* Set your desired custom color here */
+  }
+
+.btnstyle{
+    background: linear-gradient(180deg, rgba(97, 206, 112, 0), #f2295b);
+    border:1px solid #F75023;
+}
+.btnstyle:hover{
+    background: linear-gradient(180deg,   #F75023,#f2295b)
+}
+.btnsty{
+    
+}
+.btnsty:hover{
+    background: green;
+}
+
+.img_style{
+    width:70%;
+    padding-bottom: 130px;
+
+}
+.colsty{
+    margin-bottom: 120px;
+    margin-top: -400px;
+}
+
+.sli{
+   
+    padding-top: 100px;
+}
+
+
+
+.progress {
+    background-color: #d8d8d8;
+    border-radius: 20px;
+    position: relative;
+    margin: 50px 0;
+    height: 10px;
+    width: 77%;
+
+  }
+  
+  .progress-done {
+   
+   
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* dynamic - controlled by js */
+    height:100%;
+    width: 0; /* dynamic - controlled by js */
+    transition: 2s ease; 
+    /* animation: takes (1 second), type=ease, delay=0.3s */
+    
+  }
+  .progress-done1 {
+    background: green;
+   
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* dynamic - controlled by js */
+    height:100%;
+    width: 0; /* dynamic - controlled by js */
+    transition: 2s ease; 
+    /* animation: takes (1 second), type=ease, delay=0.3s */
+    
+  }

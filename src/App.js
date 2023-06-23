@@ -10,13 +10,14 @@ import Service from "./pages/Service"
 import Recommendations from "./pages/Recommendations"
 import Blogs from "./pages/Blogs"
 import Navbar from "./components/Navbar"
-
-
+import Footer from './components/Footer';
+import FormComponent from "./components/FormComponent"
+import Icon from './components/Icon';
 
 function App() {
   return (
   <>
-    <BrowserRouter>
+     <BrowserRouter>
     <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

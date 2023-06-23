@@ -10,6 +10,10 @@ import ammarimg from "./assests/ammar.png"
 import amar1 from "./assests/ammar1.png"
 import graph from "./assests/graph.png"
 import ProgressBar from "./ProgressBar";
+import Service from "../pages/Service";
+import Recommendations from "../pages/Recommendations";
+import Footer from "./Footer";
+import Contact from "../pages/Contact";
 
 
 
@@ -23,22 +27,34 @@ function Navbars() {
         <Container className="contain">
           <Nav className="justify-content-center" variant="underline">
             <Nav.Item className="item">
-              <NavLink className="navlink_style" to="/">Home</NavLink>
+              <NavLink style={{
+                fontFamily:'Open Sans, sans-serif'
+              }} className="navlink_style" to="/">Home</NavLink>
             </Nav.Item>
             <Nav.Item>
-              <NavLink className="navlink_style" to="/portfolio">Portfolio</NavLink>
+              <NavLink style={{
+                fontFamily:'Open Sans, sans-serif'
+              }} className="navlink_style" to="/portfolio">Portfolio</NavLink>
             </Nav.Item>
             <Nav.Item>
-              <NavLink className="navlink_style" to="/service">Service</NavLink>
+              <NavLink style={{
+                fontFamily:'Open Sans, sans-serif'
+              }} className="navlink_style" to="/service">Service</NavLink>
             </Nav.Item>
             <Nav.Item>
-              <NavLink className="navlink_style" to="/contact">Contact</NavLink>
+              <NavLink style={{
+                fontFamily:'Open Sans, sans-serif'
+              }} className="navlink_style" to="/contact">Contact</NavLink>
             </Nav.Item>
             <Nav.Item>
-              <NavLink className="navlink_style" to="/recommendation">Recommendations</NavLink>
+              <NavLink style={{
+                fontFamily:'Open Sans, sans-serif'
+              }} className="navlink_style" to="/recommendation">Recommendations</NavLink>
             </Nav.Item>
             <Nav.Item>
-              <NavLink className="navlink_style" to="/blogs">Blogs</NavLink>
+              <NavLink style={{
+                fontFamily:'Open Sans, sans-serif'
+              }} className="navlink_style" to="/blogs">Blogs</NavLink>
             </Nav.Item>
             <Nav.Item>
               <button className="btnstyle" style={{
@@ -67,32 +83,39 @@ function Navbars() {
               <div>
                 <p style={{
                   color: "#F75023",
-                  fontSize: "22px"
+                  fontSize: "22px",
+                  fontFamily:'Open Sans, sans-serif'
                 }}>Hello, I'm</p>
                 <h2 style={{
                   fontStyle: "italic",
                   fontWeight:'normal',
                   fontSize:"30px",
                   marginTop:'-18px',
-                  marginBottom:"15px"
+                  marginBottom:"15px",
+                  fontFamily:'Open Sans, sans-serif'
                 }}>Ammar Bin Akthar</h2>
                 <h5 style={{
                   fontWeight:'normal',
-                  marginBottom:"20px"
+                  marginBottom:"20px",
+                  fontFamily:'Open Sans, sans-serif'
                 }}>PAKISTAN</h5>
-                <p style={{
+                <h5 style={{
                   fontStyle: "italic",
                   marginBottom:'40px',
-                  marginLeft:"-10px"
-                }}>I Help Software Houses In Their. Business Growth</p>
+                  marginLeft:"-6px",
+                 
+                  fontSize:'20px',
+                  fontFamily:'Open Sans, sans-serif'
+                }}>I Help Software Houses In Their. Business Growth</h5>
                 
                 <button className="btnsty" style={{
                   
                   backgroundColor: "#F75023",
                   color:'white',
                   borderStyle:"none",
-                  padding:'10px 30px 10px 30px',
-                  borderRadius:'30px'
+                  padding:'13px 35px 13px 35px',
+                  borderRadius:'30px',
+                  fontFamily:'Open Sans, sans-serif'
                 }} >About me</button>
               </div>
             </Col>
@@ -117,7 +140,8 @@ function Navbars() {
             alignItems: "center",
             padding: "90px",
             fontStyle: 'italic',
-            fontWeight: 'bold'
+            fontWeight: 'bold',
+            fontFamily:'Open Sans, sans-serif'
           }
           }
         >About</h1>
@@ -131,17 +155,18 @@ function Navbars() {
             }}>
               <img src={amar1} style={{
                 width: "80%",
-                marginTop:'-52px'
+                marginTop:'-100px'
               }} />
             </Col>
             <Col>
               <div  >
                 <h4 style={{
                   color: "#F75023",
-                  fontWeight: 'normal',
+                  fontFamily:'Open Sans, sans-serif',
                   fontStyle: 'italic',
                   display: 'flex',
                   justifyContent: 'center',
+                 
                   
                 }}>Business Development & Project Management</h4><br />
 
@@ -152,6 +177,7 @@ function Navbars() {
                   paddingRight: '30px',
                   textAlign: 'center',
                   marginTop:'-30px',
+                  fontFamily:'Open Sans, sans-serif'
 
                 }}>I help Software houses in their business growth</h4>
                 <p style={{
@@ -159,8 +185,10 @@ function Navbars() {
 marginTop:"20px",
                   paddingLeft: '35px',
                   paddingRight:'50px',
-                  textAlign:"start"
-                  
+                  textAlign:"start",
+                  fontSize:"17px",
+                  fontFamily:'Open Sans, sans-serif',
+                  color:'#080809'
                   
 
 
@@ -171,7 +199,7 @@ marginTop:"20px",
                   backgroundColor: "#F75023",
                   color:'white',
                   borderStyle:"none",
-                  padding:'10px 30px 10px 30px',
+                  padding:'13px 40px 15px 40px',
                   borderRadius:'30px',
                   marginTop:'25px'
                 }} >Hire me</button>
@@ -184,7 +212,9 @@ marginTop:"20px",
 
 
 
-      
+      <div style={{
+        paddingBottom:'80px'
+      }}>
         <h2
           style={{
             display: "flex",
@@ -192,7 +222,7 @@ marginTop:"20px",
             alignItems: "center",
             padding: "90px",
             fontStyle: 'italic',
-            fontWeight:'normal'
+            
           }
           }
         >Portfolio</h2>
@@ -202,7 +232,9 @@ marginTop:"20px",
              paddingLeft:"70px",
              marginTop:"-75px"
         }}>
-              <h2
+              <h2 style={{
+                fontFamily:'Open Sans, sans-serif'
+              }}
         >Skills</h2>
        
        <div style={{
@@ -215,7 +247,8 @@ marginTop:"20px",
           marginBottom:'-38px',
           marginTop:'25px',
           marginLeft:"50px",
-          
+          fontSize:'20px',
+          fontFamily:'Open Sans, sans-serif'
         }}>
         
         Business Development
@@ -223,9 +256,10 @@ marginTop:"20px",
         <h6 style={{
           marginBottom:'-38px',
           marginTop:'25px',
-          marginLeft:"200px",
-          color:"#F75023"
-          
+          marginLeft:"150px",
+          color:"#F75023",
+          fontSize:'20px',
+          fontFamily:'Open Sans, sans-serif'
         }}>
           99%
         </h6>
@@ -249,7 +283,8 @@ marginTop:"20px",
           marginBottom:'-38px',
           marginTop:'25px',
           marginLeft:"50px",
-          
+          fontSize:'20px',
+          fontFamily:'Open Sans, sans-serif'
         }}>
         
         Team Leadership                                    .
@@ -257,9 +292,10 @@ marginTop:"20px",
         <h6 style={{
           marginBottom:'-38px',
           marginTop:'25px',
-          marginLeft:"200px",
-          color:"#F75023"
-          
+          marginLeft:"193px",
+          color:"#F75023",
+          fontSize:'20px',
+          fontFamily:'Open Sans, sans-serif'
         }}>
           99%
         </h6>
@@ -284,7 +320,8 @@ marginTop:"20px",
           marginBottom:'-38px',
           marginTop:'25px',
           marginLeft:"50px",
-          
+          fontSize:'20px',
+          fontFamily:'Open Sans, sans-serif'
         }}>
         
         Project Management
@@ -292,8 +329,10 @@ marginTop:"20px",
         <h6 style={{
           marginBottom:'-38px',
           marginTop:'25px',
-          marginLeft:"200px",
-          color:"#F75023"
+          marginLeft:"167px",
+          color:"#F75023",
+          fontSize:'20px',
+          fontFamily:'Open Sans, sans-serif'
           
         }}>
           99%
@@ -319,7 +358,8 @@ marginTop:"20px",
           marginBottom:'-38px',
           marginTop:'25px',
           marginLeft:"50px",
-          
+          fontSize:'20px',
+          fontFamily:'Open Sans, sans-serif'
         }}>
         
         Web Development
@@ -327,9 +367,10 @@ marginTop:"20px",
         <h6 style={{
           marginBottom:'-38px',
           marginTop:'25px',
-          marginLeft:"200px",
-          color:"#F75023"
-          
+          marginLeft:"188px",
+          color:"#F75023",
+          fontSize:'20px',
+          fontFamily:'Open Sans, sans-serif'
         }}>
           99%
         </h6>
@@ -354,7 +395,8 @@ marginTop:"20px",
           marginBottom:'-38px',
           marginTop:'25px',
           marginLeft:"50px",
-          
+          fontSize:'20px',
+          fontFamily:'Open Sans, sans-serif'
         }}>
         
         Software Developed
@@ -362,9 +404,10 @@ marginTop:"20px",
         <h6 style={{
           marginBottom:'-38px',
           marginTop:'25px',
-          marginLeft:"200px",
-          color:"#F75023"
-          
+          marginLeft:"173px",
+          color:"#F75023",
+          fontSize:'20px',
+          fontFamily:'Open Sans, sans-serif'
         }}>
           99%
         </h6>
@@ -388,7 +431,15 @@ marginTop:"20px",
             </Col>
           </Row>
         </Container>
-  
+        </div>
+
+        <Service />
+        <Recommendations />
+        <Contact style={{
+          
+        }}
+        />
+        <Footer />
 
 
     </>

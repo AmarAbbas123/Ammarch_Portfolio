@@ -18,7 +18,7 @@ const Service = () => {
       background: 'linear-gradient(to bottom, #B08F9D, #8A8BE4)',
       paddingTop:"80px",
       paddingBottom:"9%"
-    }}>
+    }} id='Service'>
     <h2 style={{
        marginBottom:'20px',
        

@@ -6,11 +6,11 @@ const FormComponent = () => {
   const [formStatus, setFormStatus] = React.useState('Submit Now')
   const onSubmit = (e) => {
     e.preventDefault()
-    setFormStatus('Submitting...')
+    setFormStatus('Submit')
     const { name,number, email, message } = e.target.elements
     let conFom = {
       name: name.value,
-      number:number.vale,
+      number:number.value,
       email: email.value,
       message: message.value,
     }

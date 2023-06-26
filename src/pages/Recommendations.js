@@ -13,7 +13,7 @@ const Recommendations = () => {
     <div style={{
       paddingTop:"3.3%",
       paddingBottom:"10%"
-    }}>
+    }} id='Recommendations'>
     <h3 style={{
       marginBottom:'50px',
       textAlign:'center',

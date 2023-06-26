@@ -8,7 +8,7 @@ const Contact = () => {
     <div style={{
       paddingTop:'10%',
       paddingBottom:"6%"
-    }}>
+    }} id="Contact">
       <Container>
         <Row style={{
           paddingBottom:"70px"

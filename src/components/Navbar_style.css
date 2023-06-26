@@ -1,15 +1,18 @@
 
 
 .navbar li{
-    display: inline-flex;
-    padding: 10px 5px;
-    text-decoration: none;
+  
+
 }
 .navlink_style{
+    display: flex;
     text-decoration: none;
     color: Black;
-    padding-right: 10px;
+    padding-right: 35px;
+    font-weight:540;
+  
     
+
 }
 .navlink_style:hover{
     color:red

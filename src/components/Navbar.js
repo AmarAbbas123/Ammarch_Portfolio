@@ -27,20 +27,36 @@ function Navbars() {
   
   return (
     <>
-    
-      {/* right */}
-      
-    
-      <div className="backg" id="Navbar">
-     
-      <div className="n-center">
-        <div className="n-list">
-          <ul style={{ listStyleType: "none" }}>
-            <li>
+        
+        <div className="backg" id="Navbar">
+    <Container  className="">
+                <Row>
+                    <Col style={{
+                      paddingRight:"80px"
+                    }}>
+                        <Navbar  expand='lg' >
+                            <Container style={{
+                              display:"flex",
+                          paddingTop:"50px",
+                         justifyContent:"right"
+
+                        }}>
+                                
+                                <Navbar.Toggle aria-controls='my-nav' style={{
+                                  
+                                  padding:"5px"
+                                }}/>
+                                <Navbar.Collapse className="justify-content-center"  id='my-nav'>
+                                <Nav style={{}}>
+                              
+       
+          
+            <li >
               <Link  style={{
                 fontFamily:'Open Sans, sans-serif',
                 
-              }} className="navlink_style"activeClass="active" to="Navbar" spy={true} 
+                
+              }} className="navlink_style" to="Navbar" spy={true} 
               smooth={true} offset={-70}
               duration={500}>
                 Home
@@ -49,13 +65,13 @@ function Navbars() {
             <li>
               <Link style={{
                 fontFamily:'Open Sans, sans-serif'
-              }} to="Portfolio" spy={true} smooth={true} offset={-70}
+              }} className="navlink_style" to="Portfolio" spy={true} smooth={true} offset={-70}
               duration={500}>
                 Portfolio
               </Link>
             </li>
             <li>
-              <Link style={{
+              <Link className="navlink_style" style={{
                 fontFamily:'Open Sans, sans-serif'
               }} to="Service" spy={true} smooth={true} offset={-70}
               duration={500}>
@@ -63,7 +79,7 @@ function Navbars() {
               </Link>
             </li>
             <li>
-              <Link style={{
+              <Link className="navlink_style" style={{
                 fontFamily:'Open Sans, sans-serif'
               }} to="Contact" spy={true} smooth={true} offset={-70}
               duration={500}>
@@ -71,7 +87,7 @@ function Navbars() {
               </Link>
             </li>
             <li>
-              <Link style={{
+              <Link className="navlink_style" style={{
                 fontFamily:'Open Sans, sans-serif'
               }} to="Recommendations" spy={true} smooth={true} offset={-70}
               duration={500}>
@@ -79,32 +95,43 @@ function Navbars() {
               </Link>
             </li>
             <li>
-              <Link style={{
+              <Link className="navlink_style" style={{
                 fontFamily:'Open Sans, sans-serif'
               }} to="testimonial" spy={true} smooth={true}>
                 Blogs
               </Link>
             </li>
-            <li>
+            <li style={{
+              marginTop:"-10px"
+            }}>
               <a href={Resume} download>
-            <button style={{
+              <button style={{
                 fontFamily:'Open Sans, sans-serif'
               }} className="btnstyle" style={{
-                  marginTop:'-10px',
+               
                   ackgroundColor: "#F75023",
                   color:'white',
                  
-                  padding:'7px 20px 7px 20px',
+                  padding:'9px 25px 9px 25px',
                   borderRadius:'30px'
                 }} >Download CV</button>
                 </a>
             </li>
-          </ul>
-        </div>
        
-      </div>
-            
+      
+              
 
+              
+
+                                </Nav>
+                               
+                                </Navbar.Collapse>
+                            </Container>
+                        </Navbar>
+                    </Col>
+                </Row>
+                </Container>
+  
          
 
 
@@ -116,7 +143,7 @@ function Navbars() {
         <Container className="sli">
           <Row>
             <Col style={{
-              marginLeft: "120px"
+            
             }}>
               <div>
                 <p style={{
@@ -167,8 +194,9 @@ function Navbars() {
             </Col>
           </Row>
         </Container>
+        
 
-      </div>
+    
 
      
 
@@ -176,7 +204,7 @@ function Navbars() {
 
 
          
-        
+        </div>
 
 
     </>
